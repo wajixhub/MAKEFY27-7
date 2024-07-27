@@ -1,0 +1,22 @@
+{
+    "audio_filename": "intro1 (2).mp3",
+    "paragraph_videos": [
+        {
+            "paragraph": " Luxury and comfort are two very important things in a car. In this video, we are going to look at the top five most luxurious cars in 2024. But before we get into the video, don't forget to leave a like and subscribe to the channel. Now without wasting any more time, let's get straight into the video.",
+            "keywords": [
+                "luxury",
+                "comfort",
+                "things",
+                "car",
+                "video"
+            ],
+            "videos": [
+                "https://videos.pexels.com/video-files/3066463/3066463-uhd_4096_2160_24fps.mp4",
+                "https://videos.pexels.com/video-files/2249630/2249630-sd_640_360_30fps.mp4",
+                "https://videos.pexels.com/video-files/2887459/2887459-hd_1920_1080_25fps.mp4",
+                "https://videos.pexels.com/video-files/2229697/2229697-sd_640_360_30fps.mp4",
+                "https://videos.pexels.com/video-files/3769033/3769033-hd_1280_720_25fps.mp4"
+            ]
+        }
+    ]
+}

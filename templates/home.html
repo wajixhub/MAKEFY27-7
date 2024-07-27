@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKEFY - Home Dashboard</title>
+    <link rel="stylesheet" href="static/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>MAKEFY</h1>
+                </div>
+                <h2 class="dashboard">Dashboard</h2>
+                <button class="logout-button">Logout</button>
+            </nav>
+        </header>
+        <main>
+            <div class="sidebar">
+                <h3>RECENT PROJECTS</h3>
+                <ul>
+                    {% for project in recent_projects %}
+                        <li>
+                            <a href="/project/{{ project.project_id }}">
+                                {{ project.project_id }}
+                            </a>
+                        </li>
+                    {% else %}
+                        <li>No recent projects found.</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="content">
+                <div class="project-section">
+                    <h3>CREATE <span class="highlight">NEW</span></h3>
+                    <form action="/new_project" method="POST">
+                        <input type="text" name="project_name" placeholder="Project Name" required>
+                        <button class="create-button" type="submit">Create</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 MAKEFY</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+</head>
+<body>
+    <h1>Project Details</h1>
+    <audio controls id="audioPlayer">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="paragraphsContainer"></div>
+    
+    <script>
+        function fetchProjectDetails() {
+            fetch(`/project_details/${projectId}`)  // `projectId` should be defined elsewhere in your script
+                .then(response => response.json())
+                .then(data => {
+                    // Set the audio source
+                    const audioPlayer = document.getElementById('audioPlayer');
+                    audioPlayer.src = `/uploads/${data.audio_filename}`;
+
+                    // Display paragraphs and video links
+                    const paragraphsContainer = document.getElementById('paragraphsContainer');
+                    data.paragraph_videos.forEach(paragraphData => {
+                        const paragraphElement = document.createElement('p');
+                        paragraphElement.innerText = paragraphData.paragraph;
+                        paragraphsContainer.appendChild(paragraphElement);
+
+                        const videoList = document.createElement('div');
+                        paragraphData.videos.forEach(videoUrl => {
+                            const videoLink = document.createElement('a');
+                            videoLink.href = videoUrl;
+                            videoLink.innerText = videoUrl;
+                            videoLink.target = '_blank';
+                            videoList.appendChild(videoLink);
+                            videoList.appendChild(document.createElement('br'));
+                        });
+                        paragraphsContainer.appendChild(videoList);
+                    });
+                })
+                .catch(error => console.error('Error fetching project details:', error));
+        }
+
+        window.onload = fetchProjectDetails;
+    </script>
+</body>
+</html>

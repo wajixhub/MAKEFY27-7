@@ -1,0 +1,39 @@
+{
+    "audio_filename": "intro3.mp3",
+    "paragraph_videos": [
+        {
+            "paragraph": " Top 5 Luxury EV SUV 2024. We all know the EV market is constantly changing with new variants coming almost every day. In this video, we are going to see the top five most luxurious EV SUV you can find in the market. From BMW's I-X to Maserati's Gricale, we will cover all of them.",
+            "keywords": [
+                "luxury",
+                "ev",
+                "suv",
+                "market",
+                "variants"
+            ],
+            "videos": [
+                "https://videos.pexels.com/video-files/3066463/3066463-uhd_4096_2160_24fps.mp4",
+                "https://videos.pexels.com/video-files/2249630/2249630-sd_640_360_30fps.mp4",
+                "https://videos.pexels.com/video-files/2887459/2887459-hd_1920_1080_25fps.mp4",
+                "https://videos.pexels.com/video-files/2229697/2229697-sd_640_360_30fps.mp4",
+                "https://videos.pexels.com/video-files/3769033/3769033-hd_1280_720_25fps.mp4"
+            ]
+        },
+        {
+            "paragraph": "Before we get into the video, don't forget to leave a like and subscribe to the channel for more car content like this. Now without wasting any more time, let's get straight into the video.",
+            "keywords": [
+                "video",
+                "channel",
+                "car",
+                "content",
+                "time"
+            ],
+            "videos": [
+                "https://videos.pexels.com/video-files/1321208/1321208-uhd_2560_1440_30fps.mp4",
+                "https://videos.pexels.com/video-files/1536322/1536322-hd_1280_720_30fps.mp4",
+                "https://videos.pexels.com/video-files/1536315/1536315-hd_1920_1080_30fps.mp4",
+                "https://videos.pexels.com/video-files/3833491/3833491-sd_240_426_30fps.mp4",
+                "https://videos.pexels.com/video-files/3150598/3150598-sd_640_360_25fps.mp4"
+            ]
+        }
+    ]
+}
